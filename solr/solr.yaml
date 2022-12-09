@@ -1,0 +1,10 @@
+apiVersion: solr.apache.org/v1beta1
+kind: SolrBackup
+metadata:
+  name: local-backup
+  namespace: default
+spec:
+  repositoryName: "local-collection-backups-1"
+  solrCloud: example
+  collections:
+    - mycoll
